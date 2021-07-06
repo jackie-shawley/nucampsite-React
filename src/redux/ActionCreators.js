@@ -1,6 +1,6 @@
 import * as ActionTypes from './ActionTypes';
 import { CAMPSITES } from '../shared/campsites';
-import { toThrowErrorMatchingInlineSnapshot } from 'jest-snapshot';
+
 
 export const addComment = (campsiteId, rating, author, text) => ({
     type: ActionTypes.ADD_COMMENT,
@@ -30,8 +30,8 @@ export const fetchCampsites = () => dispatch => {
     }, 2000);
 };
 
-EXPORT CONST CAMPSITESLOADING = () => ({
-    TYPE: ActionTypes.CAMPSITES_LOADING
+export const campsitesLoading = () => ({
+    type: ActionTypes.CAMPSITES_LOADING
 });
 
 export const campsitesFailed = errMess => ({
