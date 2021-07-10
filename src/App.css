@@ -46,23 +46,21 @@ h2 {
   background-color: #901CAD;
 }
 
-.page-enter {
+.fade-enter {
   opacity: 0;
-  transform: translateX(-100%);
 }
 
-.page-enter-active {
+.fade-enter-active {
   opacity: 1;
-  transform: translateX(0%);
   transition: 300ms ease-out;
 }
 
-.page-exit {
+.fade-exit {
   opacity: 1;
 }
 
-.page-exit-active {
+.fade-exit-active {
   opacity: 0;
-  transition: 300ms ease-in;
+  transition: 500ms ease-in;
 }
 
